@@ -189,7 +189,7 @@ public class WordHashTree {
 				line = line.trim();
 				if(!line.equals("")) {
 					String[] wordInfo = line.split("\t");
-					tmpWord = new Word(wordInfo[0]);
+					tmpWord = new Word(wordInfo[0], -1, 0);
 					this.addString(tmpWord);
 				}
 			}
